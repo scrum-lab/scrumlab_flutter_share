@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="br.com.scrumlab.scrumlabfluttershare">
+
+    <application>
+        <provider
+            android:name="br.com.scrumlab.scrumlabfluttershare.EsysFlutterShareFileProvider"
+            android:authorities="${applicationId}.fileprovider.github.com/orgs/scrum-lab/scrumlab-flutter-share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/scrumlab_flutter_share_filepaths" />
+        </provider>
+    </application>
+</manifest>
